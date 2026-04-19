@@ -33,7 +33,7 @@ elseif game.PlaceId == 155615604 then
     executeScript("https://githubusercontent.com")
 
 else
-    
+    -- GUI Code Starts Here
     local ScreenGui = Instance.new("ScreenGui", game.CoreGui)
     local Frame = Instance.new("Frame", ScreenGui)
     local TextBox = Instance.new("TextBox", Frame)
@@ -87,39 +87,33 @@ else
         if enterPressed then
             local input = TextBox.Text:lower()
 
-if input == "dls" or input == "dominus" or input == "dominus lifting simulator" then
-    ScreenGui:Destroy()
-    TeleportService:Teleport(1254185591, LocalPlayer)
-
-elseif input == "erx" or input == "eternal" or input == "eternal rarities x" then
-    ScreenGui:Destroy()
-    TeleportService:Teleport(116128963769069, LocalPlayer)
-
-elseif input == "ore" or input == "ore mining" or input == "ore mining incremental" or input == "ore incremental" then
-    ScreenGui:Destroy()
-    TeleportService:Teleport(83898177072058, LocalPlayer)
-
-elseif input == "rock" or input == "ri" or input == "rock inc" or input == "rock incremental" then
-    ScreenGui:Destroy()
-    TeleportService:Teleport(86396300021430, LocalPlayer)
-
-elseif input == "ah" or input == "arab hoops" or input == "arab" or input == "hoops" then
-    ScreenGui:Destroy()
-    TeleportService:Teleport(360589910, LocalPlayer)
-
-elseif input == "yaf" or input == "yeet" or input == "yeet a friend" or input == "yeeter" then
-    ScreenGui:Destroy()
-    TeleportService:Teleport(11708967881, LocalPlayer)
-
-elseif input == "pl" or input == "prison" or input == "prison life" or input == "prisonlife" then
-    ScreenGui:Destroy()
-    TeleportService:Teleport(155615604, LocalPlayer)
-
-else
-    Notification.Text = "That script doesn't exist. Did you mean 'DLS', 'RI', 'ERX', 'AH', 'ORE', 'YAF', or 'PL'?"
-    playDiscordSound()
-    wait(3)
-    Notification.Text = ""
-                end
+            if input == "dls" or input == "dominus" then
+                ScreenGui:Destroy()
+                TeleportService:Teleport(1254185591, LocalPlayer)
+            elseif input == "erx" or input == "eternal" then
+                ScreenGui:Destroy()
+                TeleportService:Teleport(116128963769069, LocalPlayer)
+            elseif input == "ore" or input == "ore mining" then
+                ScreenGui:Destroy()
+                TeleportService:Teleport(83898177072058, LocalPlayer)
+            elseif input == "rock" or input == "ri" then
+                ScreenGui:Destroy()
+                TeleportService:Teleport(86396300021430, LocalPlayer)
+            elseif input == "ah" or input == "arab hoops" then
+                ScreenGui:Destroy()
+                TeleportService:Teleport(360589910, LocalPlayer)
+            elseif input == "yaf" or input == "yeet" then
+                ScreenGui:Destroy()
+                TeleportService:Teleport(11708967881, LocalPlayer)
+            elseif input == "pl" or input == "prison" then
+                ScreenGui:Destroy()
+                TeleportService:Teleport(155615604, LocalPlayer)
+            else
+                Notification.Text = "Invalid script name!"
+                playDiscordSound()
+                wait(3)
+                Notification.Text = ""
             end
-        end)
+        end
+    end)
+end
