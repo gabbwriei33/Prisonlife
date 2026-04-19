@@ -1,6 +1,4 @@
-Please dont be a skid if you are gonna skid give me credit.
-    my discord gabriukas
-    ScriptBlox gabbyvr88
+
 local TeleportService = game:GetService("TeleportService")
 local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
