@@ -1,3 +1,6 @@
+Please dont be a skid if you are gonna skid give me credit.
+    my discord gabriukas
+    blo
 local TeleportService = game:GetService("TeleportService")
 local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
